@@ -1,4 +1,5 @@
 #Importing python libraries
+#Aluel Mabior
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -13,6 +14,7 @@ from google.colab import drive
 drive.mount('/content/drive')
 
 #Display the first five rows of the dataframe
+#Favour Wairimu
 student_data.head()
 #Get the descriptive statistics of the numerical columns
 student_data.describe()
@@ -21,6 +23,7 @@ student_data.info()
 student_data.info()
 
 # Check for missing values
+#Collins Otieno
 print("Missing values per column:/n", student_data.isnull().sum())
 #Visualize the distribution of numerical columns using histograms
 student_data.hist(figsize=(10, 5))
@@ -35,6 +38,7 @@ print(student_data)
 
 # Feature Engineering and Selection
 # Computing Correlation analysis
+#Jason Mbuto
 correlation_matrix = student_data.corr()
 print(correlation_matrix)
 # Visualizing the results
